@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>perfil de sam</title>
+</head>
+<body>
+    <style>
+        body{
+background-color:#f7f0f5;
+font-family: Arial, Helvetica, sans-serif;
+color: rgb(223, 147, 233);/*esto es para el color de letra*/
+text-align: center;
+
+        }
+.perfil{
+    margin: 20px auto;
+    width: 80%;
+    max-width: 600;
+    background-color: #ca2964;
+    padding: 20px;
+    box-shadow: 0 0 10px #cdb4db;
+
+
+}   
+.foto-perfil{
+    width: 250px;
+    height: 180px;
+    border-radius: 50%;
+    margin: 0 auto;
+    display: block;
+} 
+
+    </style>
+    <div class="perfil">
+        <img src="Hello kitty.jpg" alt="voleey"class="foto-perfil">
+        <h1 id="nombre">Nombre de perfil</h1>
+        <h3 id="especialidad">especialidad del cetis</h3>
+        <li id="musica">musica favorita</li>
+        <li id="programas">programas favoritos</li>
+        <h2>informacion de contacto</h2>
+        <p id="telefono">telefono</p>
+        <p id="correo">correo</p>
+        <p id="biografia">biografia</p>
+
+        </div>
+        <script>
+            document.addEventListener('DOMContentLoaded',function(){
+                document.getElementById('nombre').textContent='Zamantha Garcia';
+                document.getElementById('especialidad').textContent='programacion';
+                document.getElementById('musica').textContent='fuerza regida,natanael,junior H';
+                document.getElementById('programas').textContent='novelas';
+                document.getElementById('telefono').textContent='8997543218';
+                document.getElementById('correo').textContent='brittany@gmail.com';
+                document.getElementById('biografia').textContent='me gusta mucho el voley';
+            })
+        </script>
+</body>
+</html>

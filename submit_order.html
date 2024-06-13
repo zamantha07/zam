@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js">
+        </script>
+          <Link href="https://fonts.cdnfonts.com/css/la-unica" rel="stylesheet"></Link>
+          <link href="https://fonts.cdnfonts.com/css/petit"  rel="stylesheet" ></Link>
+    <title>Document</title>
+</head>
+<body>
+     <style>
+        body{
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            background-color: white;
+            margin: 0;
+            padding: 20px;
+            color: #666;
+        }
+        h1{
+   color: rgb(109, 5, 5);
+text-shadow: 5px 5px 5px rgb(14, 1, 1);
+text-align: center;
+        }
+    </style>
+        <div style="margin: 2px;">
+            <nav class="navba navbar-light"
+            style="background-color: rgb(15, 15, 15);">
+            <div class="countainer">
+                <a class="navbar-brand" href="Index.html"
+                style="color:rgb(248, 158, 236);">Inicio</a>
+        <div class="collage navbar-collapse
+        "id="navbarNavDropdown">
+        <ul class="nav navbar-nav"></ul>
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href=""
+            id="navbarDropdownMenuLink"
+            data-toggle="dropdown"
+            aria-haspopup="true"
+            aria-expanded="false">Unidad 1</a>
+           <div class="dropdown-menu"
+           aria-labelledby="navbarDripdownMenuLink">
+           <a  class="dropdown-item"
+           href="PERfil.html">perfil</a><br>
+        <a class="dropdown-item"  href="calculadora.html">Calculadora</a><br>
+        <a  class="dropdown-item"  href="tienda.html">Tienda parte 1</a>
+        </div>
+        
+        
+        </li>
+        </div>
+        
+            </div>
+        
+            </nav>
+        
+            </div>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href=""
+                id="navbarDropdownMenuLink"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false">Unidad 2</a>
+               <div class="dropdown-menu"
+               aria-labelledby="navbarDripdownMenuLink">
+            <a  class="dropdown-item"
+            href="tiendaPedido.html">tienda pedido</a><br>
+            <a class="dropdown-item"  href="json.html">json</a><br>
+            <a  class="dropdown-item"  href="tienda.html">Tienda pedido 2</a>
+            </div>
+            
+            
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href=""
+                id="navbarDropdownMenuLink"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false">Unidad 3</a>
+               <div class="dropdown-menu"
+               aria-labelledby="navbarDripdownMenuLink">
+            <a  class="dropdown-item"
+            href="tiendapedido2.html">perfil</a><br>
+            <a class="dropdown-item"  href="basededatos.html">base de datos</a><br>
+            <a  class="dropdown-item"  href="peliculas.html">peliculas</a>
+            </div>
+        </div>
+
+        <h1>Resumen del Pedido</h1>
+
+        <div id="resumenpedido"></div>
+    
+            <script>
+                window.onload = function(){
+                    const params = new URLSearchParams(window.location.search);
+                    const resumenpedido = document.getElementById('resumenpedido');
+                    for(const [key,value] of params. entries()){
+                        const detal = document.createElement('p'):
+                        detail.texContent =´${key}:${value}´;
+                        resumenpedido.appendChild(detail);
+                    }
+                };
+            </script>
+
+
+</body>
+</html>
